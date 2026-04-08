@@ -28,6 +28,7 @@ import { useState, useEffect, useRef } from "react";
 const NAV_LINKS: Array<any> = [
     { id: "map", to: "/map", icon: Map, labelKey: "navbar.map", matchPrefix: "/mappage" },
     { id: "bestiary", to: "/bestiary", icon: Bone, labelKey: "navbar.bestiary", matchPrefix: "/bestiary" },
+    { id: "skillsAndClasses", to: "/skills_and_classes", icon: Bone, labelKey: "navbar.skillsAndClasses", matchPrefix: "/skills_and_classes", badge: "Dev" },
     {
         id: "tools",
         dropdown: true,

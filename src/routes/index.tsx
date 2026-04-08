@@ -21,6 +21,7 @@ const HomePage = lazy(() => import("@routes/HomePage"));
 const CommunityPage = lazy(() => import("@routes/CommunityPage"));
 const MuseumPage = lazy(() => import("@routes/MuseumPage"));
 const ItemsNRecipesPage = lazy(() => import("@routes/ItemsNRecipesPage"));
+const SkillNClassesPage = lazy(() => import("@routes/SkillsNClassesPage"));
 
 export const AppRoutes: FC = () => {
     const fallback = <div className="text-center text-white">Loading...</div>;
@@ -40,6 +41,7 @@ export const AppRoutes: FC = () => {
                         <Route path="/community" element={<CommunityPage />} />
                         <Route path="/museum" element={<MuseumPage />} />
                         <Route path="/bestiary" element={<BestiaryPage />} />
+                        <Route path="/skills_and_classes" element={<SkillNClassesPage />} />
                         <Route
                             path="/itemsNrecipes"
                             element={<ItemsNRecipesPage />}
